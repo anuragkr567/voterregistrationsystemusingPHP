@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voter Registration</title>
+   <img
+        src="https://presentations.gov.in/wp-content/uploads/2020/06/Election-Commission_Preview.png?x31571"
+        alt=""
+        
+        style="height: 100px"; background="transparent" ;
+      />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #94ccf4;
+      padding: 20px;
+       background-image: url(https://www.caleidoscope.in/wp-content/uploads/2019/04/Vote-for-India.jpg);
+    background-size: cover;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: transparent;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+   h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    border-style: outset;
+    box-shadow:0px 0px 10px black;
+}
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+       background-color: rgb(94, 148, 165);
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #12a5f4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #b9151d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Voter Registration</h1>
+    <form action="register.php" method="post" enctype="multipart/form-data">
+      <label for="full_name">Full Name</label>
+      <input type="text" id="full_name" name="full_name" required>
+
+      <label for="voter_id">Voter ID</label>
+      <input type="text" id="voter_id" name="voter_id" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <label>Gender</label>
+      <div class="gender-options">
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+      </div>
+
+      <label for="photo">Upload Photo</label>
+      <input type="file" id="photo" name="photo" accept="image/*" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+  
